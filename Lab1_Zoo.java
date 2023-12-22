@@ -8,7 +8,7 @@ public class Zoo {
     private final String location;
 
     private Zoo(Builder builder) {
-        this.name = Objects.requireNonNull(builder.name, "Zoo Caren");
+        this.name = Objects.requireNonNull(builder.name, "Name cannot be null");
         this.location = builder.location;
     }
 
